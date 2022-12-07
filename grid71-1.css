@@ -1,0 +1,279 @@
+/* style for all */
+@font-face {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  src: url("font/Segoe.UI_p30download.com.woff") format("woff");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #262626;
+  font-size: 15px;
+  line-height: 1.5;
+}
+a {
+  color: #262626;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.Container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Nav Style */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+  height: 60px;
+  padding: 20px 0;
+}
+.main-nav .Logo {
+  width: 110px;
+}
+.main-nav ul {
+  display: flex;
+}
+.main-nav ul li {
+  padding: 0px 10px;
+}
+.main-nav ul li a {
+  padding-bottom: 2px;
+}
+.main-nav ul li a:hover {
+  border-bottom: 2px solid #262626;
+}
+.main-nav ul.main-menu {
+  flex: 1;
+  justify-content: flex-start;
+  margin-left: 20px;
+}
+.btn {
+  text-transform: capitalize;
+  display: inline-block;
+  background-color: #262626;
+  color: #fff;
+  font-weight: bold;
+  border: 0;
+  padding: 10px 20px;
+}
+.btn:hover {
+  opacity: 90%;
+}
+
+/* ShowCase */
+.ShowCase {
+  width: 100%;
+  height: 400px;
+  background: url("image/slide1.png") center center/cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+}
+.ShowCase h2,
+p,
+a {
+  margin-bottom: 10px;
+}
+.ShowCase .btn {
+  margin-top: 20px;
+}
+.ShowCase p {
+  color: #262626;
+}
+
+/* Home Cards */
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.home-cards img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.home-cards h3 {
+  margin-bottom: 5px;
+}
+.home-cards div p {
+  color: #262626;
+}
+.home-cards a {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  padding-top: 10px;
+  color: #0067b8;
+}
+.home-cards a:hover {
+  border-bottom: 2px solid #0067b8;
+}
+/* Xbox */
+.Xbox {
+  width: 100%;
+  height: 350px;
+  background: url("image/xbox.png") no-repeat center center/cover;
+  margin-bottom: 20px;
+}
+.Xbox .content {
+  width: 40%;
+  padding: 50px 0 0 30px;
+}
+.Xbox h2 {
+  text-transform: capitalize;
+}
+.Xbox p {
+  color: #262626;
+  margin: 10px 0 20px;
+}
+/* Carbon */
+.Carbon {
+  width: 100%;
+  height: 350px;
+  background: url("image/carbon.jpg") no-repeat center center/cover;
+  margin-bottom: 40px;
+}
+.Carbon .content {
+  width: 55%;
+  padding: 100px 0 0 30px;
+}
+.Carbon h2,
+p {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.Carbon a {
+  background-color: #fff;
+  color: #262626;
+}
+
+/* Follow */
+.Follow {
+  display: flex;
+  align-items: center;
+  justify-self: flex-start;
+  margin: 30px 0 30px;
+}
+.Follow p {
+  text-transform: capitalize;
+  color: #262626;
+}
+.Follow p,
+a {
+  margin-right: 15px;
+}
+
+/* Links */
+.Links {
+  background-color: #f2f2f2;
+  color: #616161;
+  font-size: 12px;
+  padding: 35px 0;
+}
+.Link-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.Link-inner ul li {
+  line-height: 2.8;
+}
+
+/* footer */
+.footer {
+  background-color: #f2f2f2;
+  color: #616161;
+  font-size: 12px;
+  padding: 20px 0;
+}
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer div {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+.footer li {
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .main-nav ul.main-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f2f2f2;
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid #ccc;
+    opacity: 90%;
+    padding: 30px;
+  }
+
+  .main-nav ul.main-menu li {
+    padding: 10px 0 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 15px;
+  }
+  .home-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Xbox p,
+  .Carbon p {
+    display: none;
+  }
+
+  .Xbox h2,
+  .Carbon h2 {
+    margin-bottom: 20px;
+  }
+
+  .Carbon .content {
+    width: 85%;
+  }
+
+  .Link-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .home-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
